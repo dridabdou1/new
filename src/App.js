@@ -2,15 +2,16 @@ import React from "react";
 import AccordionContainer from "./containers/AccordionContainer";
 import FooterContainer from "./containers/FooterContainer";
 import JumbotronContainer from "./containers/Jumbotron";
-import OptFormContainer from "./containers/OptFormContainer";
-
+import * as Routes from "./constants/routes";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <JumbotronContainer></JumbotronContainer>
-      <AccordionContainer></AccordionContainer>
-      <OptFormContainer></OptFormContainer>
-      <FooterContainer></FooterContainer>
+      <Router>
+        <JumbotronContainer></JumbotronContainer>
+        <AccordionContainer></AccordionContainer>
+        <FooterContainer></FooterContainer>
+      </Router>
     </div>
   );
 }

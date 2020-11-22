@@ -40,7 +40,6 @@ export const Header = styled.div`
 export const Body = styled.div`
   max-height: 1200px;
   background: #353535;
-  max-width: 446px;
   whitespace: pre-wrap;
   padding: 0.8em 2.2em 0.8em 1.2em;
 `;
